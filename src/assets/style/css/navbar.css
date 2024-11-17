@@ -1,0 +1,146 @@
+header{
+    background-color: #2b2b33;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    z-index: 9;
+}
+header .logo{
+    height: 78px;
+    width: auto;
+    object-fit: contain;
+}
+header ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+header ul li{
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 15px;
+    position: relative;
+
+}
+header ul li a{
+    color: #f3ededbd;
+    text-decoration: none;
+    box-shadow: none;
+    outline: none;
+    position: relative;
+}
+header ul li a::after{
+    position: absolute;
+    width: 0;
+    background : #fff;
+    height: 3px;
+    left: 0;
+    top: 45px;
+    content: "";
+    transition: all 0.3s;
+}
+header ul li a:hover{
+color: #fff;
+transition: all 0.3s;
+}
+header ul li a:hover::after{
+    width: 100%;
+    transition: all 0.3s;    
+}
+header ul li.search{
+    align-content: center;
+}
+header ul li input{
+    box-sizing: none !important;
+    border: 0 !important;
+}
+header .search .search-btn{
+    padding: 0;
+    margin: 0;
+    box-shadow: none !important;
+}
+header .search .search-img{
+    height: 15px;
+}
+header .search-field {
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    right: 5px;
+    width: 40vw;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out; 
+    margin-top: 3px;
+    background-color: #2b2b33;
+}
+header .search-field.expand {
+    max-height: 100px;
+}
+header .search-input {
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 100%;
+    position: relative;
+    background-color: #2b2b33;
+    border: 0 !important;
+    color: #fff;
+    border: 0 !important;
+}
+header .search-field .search-img{
+    position: absolute;
+    right: 10px;
+    height: 15px;
+    top: 10px;
+    border: 0 !important;
+}
+header .search-field input::placeholder{
+    font-size: 12px;   
+    color: #fff;
+}
+
+header .nav-btn {
+    display: none;
+    opacity: 1;
+}
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+        display: block;
+        color: #fff !important;
+        box-shadow: none !important;
+        outline: none !important;
+	}
+
+	header nav {
+		position: fixed;
+        transform: translateX(100%);
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.5rem;
+        background-color: #222 !important;
+		transition: 1s;
+		z-index: 9;
+        top: 5pc;
+	}
+    header ul{
+        display: block;
+        width: 100%;
+    }
+
+	header .responsive_nav {
+        transform: translateX(0%);
+        width: 50vw;
+        right: 0;
+	}
+    header ul li{
+        padding: 20px 20px;
+    }
+    header .justify-items-end{
+        justify-items: end;
+    }
+}

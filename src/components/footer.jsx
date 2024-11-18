@@ -15,7 +15,7 @@ function Footer() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iste voluptates non quaerat deserunt in repellat corporis ratione quibusdam repellendus.
                 </p>
             </div>
-            <div className="col-md-3 text-center">
+            <div className="col-md-3 text-md-center">
               <ul className='menu p-0'>
                 <li className='link-items'>
                   <a className='link' href={"/"}>Home</a>

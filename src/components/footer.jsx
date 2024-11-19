@@ -32,7 +32,7 @@ function Footer() {
               </ul>
             </div>
             <div className="col-md-4">
-            <ul className='contact-right'>
+            <ul className='contact-right p-0 p-md-auto'>
               <li>
                  <div className="">
                    <a>lorem content <br />

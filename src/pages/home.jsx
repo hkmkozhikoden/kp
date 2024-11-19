@@ -6,19 +6,26 @@ import Footer from '../components/footer';
 import HomeService from '../components/home-service';
 import HomeUpdates from '../components/home-updates';
 import HomeContact from '../components/home-contact';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 function Home() {
   return (
-    <div>
-      <Navbar/>
-      <HomeBanner/>
-      <HomeNews/>
-      <HomeService/>
-      <HomeUpdates/>
-      <HomeContact/>
-      <Footer/>
-    </div>
-  )
+    <HelmetProvider>
+      <div>
+        <Helmet>
+          <title>KP - India | Drive the Future</title>
+          <meta name="description" content="Welcome to KP - India. We drive the future of technology and innovation." />
+        </Helmet>
+        <Navbar />
+        <HomeBanner />
+        <HomeNews />
+        <HomeService />
+        <HomeUpdates />
+        <HomeContact />
+        <Footer />
+      </div>
+    </HelmetProvider>
+  );
 }
 
-export default Home
+export default Home;

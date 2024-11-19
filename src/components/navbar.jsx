@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import '../assets/style/css/navbar.css';
@@ -9,7 +9,7 @@ import Close from "../assets/images/icons/close.png";
 function Navbar() {
   const navRef = useRef();
   const [showSearchField, setShowSearchField] = useState(false);
-  const [isNavOpen, setIsNavOpen] = useState(false); // Track nav state
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleSearchField = () => {
     setShowSearchField(!showSearchField);
@@ -21,8 +21,15 @@ function Navbar() {
 
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
-    setIsNavOpen(!isNavOpen); // Toggle state
+    setIsNavOpen(!isNavOpen);
   };
+  useEffect(() => {
+    if (isNavOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [isNavOpen]);
 
   return (
     <>

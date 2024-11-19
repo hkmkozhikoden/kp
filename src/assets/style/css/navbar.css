@@ -87,6 +87,7 @@ header .search-input {
     border: 0 !important;
     color: #fff;
     border: 0 !important;
+    outline: none !important;
 }
 header .search-field .search-img{
     position: absolute;
@@ -105,6 +106,9 @@ header .nav-btn {
     opacity: 1;
 }
 @media only screen and (max-width: 1024px) {
+    header {
+        position: fixed;
+    }
 	header .nav-btn {
 		visibility: visible;
 		opacity: 1;
@@ -115,17 +119,21 @@ header .nav-btn {
 	}
 
 	header nav {
-		position: fixed;
-        transform: translateX(100%);
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 1.5rem;
-        background-color: #222 !important;
-		transition: 1s;
-		z-index: 9;
+        -webkit-font-smoothing: antialiased;
+        background-color: #2b2b33;
+        bottom: 0;
+        height: 100%;
+        padding-top: 0;
+        position: fixed;
+        right: 0;
         top: 5pc;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -webkit-transition: -webkit-transform .4s ease-out;
+        transition: -webkit-transform .4s ease-out;
+        transition: transform .4s ease-out;
+        transition: transform .4s ease-out, -webkit-transform .4s ease-out;
+        z-index: 1;
 	}
     header ul{
         display: block;
@@ -136,11 +144,19 @@ header .nav-btn {
         transform: translateX(0%);
         width: 50vw;
         right: 0;
+        height: 100%
 	}
     header ul li{
         padding: 20px 20px;
     }
     header .justify-items-end{
         justify-items: end;
+    }
+    header .search-field{
+        width: 80vw;
+        transition: none !important;
+    }
+    header .search-field.expand {
+        padding: 10px;
     }
 }

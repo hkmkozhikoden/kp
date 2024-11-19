@@ -71,12 +71,12 @@ header .search-field {
     right: 5px;
     width: 40vw;
     max-height: 0;
-    transition: max-height 0.4s ease-in-out; 
     margin-top: 3px;
     background-color: #2b2b33;
 }
 header .search-field.expand {
     max-height: 100px;
+    padding: 10px;
 }
 header .search-input {
     border-radius: 5px;
@@ -154,9 +154,5 @@ header .nav-btn {
     }
     header .search-field{
         width: 80vw;
-        transition: none !important;
-    }
-    header .search-field.expand {
-        padding: 10px;
     }
 }

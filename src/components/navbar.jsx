@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaUser } from "react-icons/fa";
 import '../assets/style/css/navbar.css';
 import Logo from '../assets/images/logo/logo.png';
 import Search from "../assets/images/icons/search.png";
@@ -64,6 +64,9 @@ function Navbar() {
                     onClick={showNavbar}>
                     {isNavOpen ? <FaTimes /> : <FaBars />}
                   </button>
+                </li>
+                <li>
+                  <button className='btn text-white shadow-none'><FaUser/></button>
                 </li>
               </ul>
             </div>

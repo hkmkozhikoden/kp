@@ -1,5 +1,5 @@
 import React from 'react';
-import Banner1 from "../assets/images/banner/about-2.jpg"
+import Banner1 from "../assets/images/banner/about-4.jpg"
 import { Link } from "react-router-dom";
 import '../assets/style/css/banner.css'
 function HomeBanner() {
@@ -11,7 +11,7 @@ function HomeBanner() {
                <div className="container">
                  <div className="row">
                     <div className="col-md-6" data-aos="fade-down" data-aos-offset="10">
-                    <h1 className="text-xl-semibold mb-3">Excellence Through <br /> Innovation</h1>
+                    <h1 className="text-xl-semibold mb-4">Excellence Through <br /> Innovation</h1>
                     <Link to='/contact' className="btn-banner text-black mt-3">Book a meeting</Link>
                     </div>
                  </div>

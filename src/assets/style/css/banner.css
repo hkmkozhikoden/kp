@@ -32,11 +32,17 @@
 }
 .home-banner .btn-banner{
     padding: 10px 20px;
-    background-color: aliceblue;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    color: #222;
+    background:#bd9036 ;
+    border: 1px solid #bd9036;
+    border-radius: 1px;
+    color: #ffffff;
     text-decoration: none;
+
+}
+.home-banner .btn-banner:hover{
+    background:#816225 ;
+    border: 1px solid #816225;
+    color: #ffffff;
 
 }
 @media (max-width: 767px) {

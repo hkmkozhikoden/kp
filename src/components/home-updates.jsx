@@ -1,6 +1,8 @@
 import React from 'react';
 import '../assets/style/css/home-update.css';
 import Card1 from "../assets/images/banner/2.jpg";
+import Card2 from "../assets/images/banner/protfolio1.jpg";
+
 
 function HomeUpdates() {
   const updates = [
@@ -20,7 +22,7 @@ function HomeUpdates() {
       date: "19 Nov 2024",
       location: "Delhi | IND",
       author: "AD",
-      image: Card1,
+      image: Card2,
     },
   ];
 

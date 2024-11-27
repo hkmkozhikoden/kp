@@ -13,16 +13,16 @@ function ContactForm() {
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur necessitatibus reprehenderit impedit inventore vero doloremque architecto debitis facilis sunt quod?</p>
                             </div>
                             <div className="col-12">
-                                <h5>Corporate Address</h5>
+                                <h5 className='my-2'>Corporate Address</h5>
                                 <a href=''>Lorem ipsum dolor sit amet,<br /> consectetur adipisicing <br /> elit. Suscipit consectetur eveniet inventore sunt <br /> cupiditate dicta <br /> esse ullam repudiandae voluptate! Voluptatibus.</a>
                             </div>
                             <div className="col-12">
-                                <h5>Mail Us</h5>
+                                <h5 className='my-2'>Mail Us</h5>
                                <a href="mailto:nisamudheenkp91@gmail.com">nisamudheenkp91@gmail.com</a> <br />
                                <a href="mailto:nisamudheenkp91@gmail.com">nisamudheenkp91@gmail.com</a>
                             </div>
                             <div className="col-12">
-                                <h5>Telephone</h5>
+                                <h5 className='my-2'>Telephone</h5>
                                <a href="tel:+91 86060 65001">+91 86060 65001</a> <br />
                                <a href="tel:+91 86060 65001">+91 86060 65001</a>
                             </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom";
 import Logo from "../assets/images/logo/logo.png";
 import '../assets/style/css/footer.css';
 function Footer() {
@@ -16,6 +15,7 @@ function Footer() {
                 </p>
             </div>
             <div className="col-md-3 text-md-center">
+              <h5>Quick Links</h5>
               <ul className='menu p-0'>
                 <li className='link-items'>
                   <a className='link' href={"/"}>Home</a>
@@ -32,6 +32,7 @@ function Footer() {
               </ul>
             </div>
             <div className="col-md-4">
+              <h5>Contact Us</h5>
             <ul className='contact-right p-0 p-md-auto'>
               <li>
                  <div className="">

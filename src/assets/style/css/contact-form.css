@@ -8,7 +8,7 @@
 @media (min-width:767px) {
     .contact-form-sec .contact-form{
         bottom: 35%;
-        z-index: 111 !important;
+        z-index: 2 !important;
     }
 }
 .contact-form-sec .contact-form .form-control{

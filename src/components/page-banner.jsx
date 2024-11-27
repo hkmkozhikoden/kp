@@ -16,7 +16,7 @@ function PageBannner({ title, subtitle, image }) {
                  </div>
                </div>
             </div>
-            <img className='banner' src={image} alt="Page Banner" />
+            <img className='page-banner' src={image} alt="Page Banner" />
         </div>
       </section>
     </div>

@@ -36,12 +36,12 @@ function Navbar() {
       <header>
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-4 col-4">
+            <div className="col-lg-4 col-3 col-sm-3">
               <Link to={"/"}>
                 <img src={Logo} className='logo' alt="Logo" />
               </Link>
             </div>
-            <div className="col-lg-6 col-2">
+            <div className="col-lg-6 col-sm-2 col-1">
               <nav ref={navRef} className="">
                 <ul>
                   <li><Link to={"/"}>Home</Link></li>
@@ -51,14 +51,14 @@ function Navbar() {
                 </ul>
               </nav>
             </div>
-            <div className="col-lg-2 col-6 justify-items-end align-items-center">
+            <div className="col-lg-2 col-7 justify-items-end align-items-center">
               <ul className='p-0 m-0 d-flex justify-content-end'>
                 <li className='search'>
                   <button className='btn search-btn' onClick={toggleSearchField}>
                     <img className='search-img' src={Search} alt="Search" />
                   </button>
                 </li>
-                <li>
+                <li className='d-block d-lg-none'>
                   <button
                     className="nav-btn btn"
                     onClick={showNavbar}>

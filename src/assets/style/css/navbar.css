@@ -10,6 +10,13 @@ header .logo{
     width: auto;
     object-fit: contain;
 }
+header .logo-card .title{
+    border-left: 2px solid #fff;
+    padding-left: 6px;
+}
+header .lp-1{
+    letter-spacing: 5px;
+}
 header ul{
     display: flex;
     flex-wrap: wrap;
@@ -167,5 +174,16 @@ header .nav-btn {
     }
     header ul li{
         padding: 0px 5px !important;
+    }
+}
+@media(max-width:567px){
+    header .lp-1{
+        letter-spacing: 3px;
+    }
+    header .fs-12{
+        font-size: 9px !important;
+    }
+    header .logo{
+        height: 65px;
     }
 }

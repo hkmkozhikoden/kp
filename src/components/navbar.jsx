@@ -38,7 +38,13 @@ function Navbar() {
           <div className="row align-items-center">
             <div className="col-lg-3 col-xl-4 col-3 col-sm-3">
               <Link to={"/"}>
+                <div className="d-flex align-items-center logo-card">
                 <img src={Logo} className='logo' alt="Logo" />
+                <div className="title mt-3 fs-12">
+                <div className='text-white text-uppercase '>Consulting</div>
+                <div className='text-white text-uppercase lp-1'>Service</div>
+                </div>
+                </div>
               </Link>
             </div>
             <div className="col-lg-6 col-sm-2 col-1">

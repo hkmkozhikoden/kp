@@ -1,5 +1,5 @@
 .footer{
-    background-color: #24242a;
+    background-color: #151517;
     color: #f3f3f3;
 }
 .footer .logo{
@@ -20,4 +20,7 @@
 }
 .footer .menu li{
     padding: 10px 0px;
+}
+footer .lp-2{
+    letter-spacing: 6px;
 }

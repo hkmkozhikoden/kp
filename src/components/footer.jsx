@@ -9,7 +9,10 @@ function Footer() {
             <div className="col-md-5">
                 <a href="#" className='mb-3 d-flex align-items-center'>
                     <img className='logo' src={Logo} alt="" />
-                    <span className='text-white mt-3 text-uppercase'>Consulting</span>
+                   <div className='d-block mt-3'>
+                   <div className='text-white text-uppercase'>Consulting</div>
+                   <div className='text-white text-uppercase lp-2'>Service</div>
+                   </div>
                 </a>
                 <p className='mb-1 text-m-white'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iste voluptates non quaerat deserunt in repellat corporis ratione quibusdam repellendus.

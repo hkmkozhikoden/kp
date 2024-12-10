@@ -5,12 +5,6 @@
     padding: 50px 40px;   
     position: relative;
 }
-@media (min-width:767px) {
-    .contact-form-sec .contact-form{
-        bottom: 35%;
-        z-index: 2 !important;
-    }
-}
 .contact-form-sec .contact-form .form-control{
     box-shadow: none;
 }
@@ -20,7 +14,7 @@
 .contact-form-sec .contact-form .btn-submit{
     width: 100%;
     text-align: center;
-    background-color: #25232a;
+    background-color: #000000f5;
     border-radius: 20px;
     color: #fff;
     transition: all 0.3s;
@@ -31,4 +25,7 @@
 }
 .contact-main .home-banner{
     overflow: auto !important;
+}
+.contact-main-card iframe{
+    margin-bottom: -6px !important;
 }

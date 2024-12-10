@@ -17,8 +17,31 @@
     right: 20px;
     border-radius: 10px;
     padding: 10px 20px;
-    background-color: #101010;
+    background-color: #000000f5;
     /* background-color: #E6E6FA; */
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
 
+}
+
+.service-card .card-sm:hover:before {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.service-card .card-sm:before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    background: #000000f5;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    top: 100%;
+    z-index: 1;
 }

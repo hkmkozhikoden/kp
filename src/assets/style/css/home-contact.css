@@ -1,5 +1,6 @@
 .home-contat-sec{
-    background:linear-gradient(#fff 50%, #151414 40%) ;
+    background:linear-gradient(#fff 50%, #000000f5 40%) ;
+    overflow: hidden;
 }
 .home-contat-sec .cont-img{
     width: 100%;
@@ -26,7 +27,7 @@
 }
 .home-contat-sec .contact-card .btn-submit{
     width: 100%;
-    background-color:#25232a;
+    background-color:#000000f5;
     color: #fff;
     border-radius: 20px;
 }

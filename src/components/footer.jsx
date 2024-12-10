@@ -18,9 +18,9 @@ function Footer() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iste voluptates non quaerat deserunt in repellat corporis ratione quibusdam repellendus.
                 </p>
             </div>
-            <div className="col-md-3 text-md-center">
+            <div className="col-md-3">
               <h5>Quick Links</h5>
-              <ul className='menu p-0'>
+              <ul className='menu'>
                 <li className='link-items'>
                   <a className='link' href={"/"}>Home</a>
                 </li>
@@ -40,24 +40,20 @@ function Footer() {
             <ul className='contact-right p-0 p-md-auto'>
               <li>
                  <div className="">
-                   <a>lorem content <br />
-                     lorem contenrt (PO) <br />
-                     banglure (DT) <br />
-                     karnataka, India
-                     534434
+                   <a>Mona Enclave, Sannatammanahalli, <br /> Battarahalli,  Bengaluru, <br />   Karnataka <br /> 560049
                    </a>
                  </div>
               </li>
               <li>
                 <div className="">
-                 <a className='d-block' href="+91 99999999">+91 999999999</a>
+                 <a className='d-block' href="+91 8606065001">+91 8606065001</a>
                 {/* <a className='d-block' href="tel:+91 98460 07257">+91 6282 014 275</a> */}
                 </div>
               </li>
               <li>
                 <div className="">
-                 <a className='d-block' href="mailto:lorem@gmail.com">lorem gmail@gmail.com</a>
-                 <a className='d-block' href="#">loremgmail.com</a>
+                 <a className='d-block' href="mailto:admin@kppcs.com">admin@kppcs.com</a>
+                 <a className='d-block' href="https://kppcs.com/" target='_blank'>kppcs.com</a>
                 </div>
               </li>
             </ul>

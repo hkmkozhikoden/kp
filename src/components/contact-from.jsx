@@ -131,17 +131,20 @@ function ContactForm() {
                     /> 
                   </div>
                   <div className="col-12 mb-3">
-                    <input
-                      className="form-control mt-2"
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder="Enter your phone number"
-                      pattern="[0-9]{10}"
-                      required
-                    />
+                  <input 
+                    className='form-control' 
+                    type="text" 
+                    name="phone" 
+                    id="phone" 
+                    placeholder='Enter your Phone no:' 
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required 
+                    inputMode="numeric" 
+                    pattern="\d{10,}" 
+                    maxLength="10" 
+                    onInput={(e) => { e.target.value = e.target.value.replace(/\D/g, ''); }}
+                  />
                   </div>
                   <div className="col-12 mb-3">
                     <input

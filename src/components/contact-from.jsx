@@ -1,7 +1,65 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../assets/style/css/contact-form.css';
+import Swal from 'sweetalert2';
 
 function ContactForm() {
+  const [formData, setFormData] = useState({
+    firstname: '',
+    lastname: '',
+    phone: '',
+    email: '',
+    message: ''
+  });
+   // Function to handle form input changes
+   const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const form = new FormData();
+    form.append("access_key", "ebeea6dc-105b-4b6d-8400-aeff08f2898d");
+    form.append("firstname", formData.firstname);
+    form.append("lastname", formData.lastname);
+    form.append("phone", formData.phone);
+    form.append("email", formData.email);
+    form.append("message", formData.message);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: form
+      });
+      const res = await response.json();
+
+      if (res.success) {
+        Swal.fire({
+          title: "Success!",
+          text: "Message sent successfully",
+          timer: 3000,
+          icon: "success"
+        }).then(() => {
+          event.target.reset();
+          setFormData({
+            firstname: '',
+            lastname: '',
+            phone: '',
+            email: '',
+            message: ''
+          });
+        });
+      } else {
+        Swal.fire("Error", "There was an issue sending your message. Please enter proper details.", "error");
+      }
+    } catch (error) {
+      Swal.fire("Error", "Network error or server issue. Please try again later.", "error");
+    }
+  };
+
+
   return (
   <div className='contact-main-card'>
     <section className="contact-form-sec">
@@ -40,21 +98,37 @@ function ContactForm() {
           {/* Contact Form */}
           <div className="col-md-5 mb-3 mb-md-0">
             <div className="contact-form">
-              <form action="#" method="POST">
+              <form  onSubmit={onSubmit} method="POST">
                 <div className="row text-start">
                   <div className="col-12">
                     <h5 className="font-bold">Get In Touch</h5>
                     <p className="fs-16 mb-2">How can I help you?</p>
                   </div>
-                  <div className="col-12 mb-3">
-                    <input
-                      className="form-control mt-2"
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="Enter your name"
+                  <div className="col-md-6 mb-3">
+                    <label htmlFor="firstname">First Name</label>
+                    <input 
+                      className='form-control' 
+                      type="text" 
+                      name="firstname" 
+                      id="firstname" 
+                      placeholder='Enter Your Name' 
+                      value={formData.firstname}
+                      onChange={handleChange}
                       required
-                    />
+                    /> 
+                  </div>
+                  <div className="col-md-6 mb-3">
+                    <label htmlFor="lastname">Last Name</label>
+                    <input 
+                      className='form-control' 
+                      type="text" 
+                      name="lastname" 
+                      id="lastname" 
+                      placeholder='Enter Your Name' 
+                      value={formData.lastname}
+                      onChange={handleChange}
+                      required
+                    /> 
                   </div>
                   <div className="col-12 mb-3">
                     <input
@@ -62,6 +136,8 @@ function ContactForm() {
                       type="tel"
                       id="phone"
                       name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
                       placeholder="Enter your phone number"
                       pattern="[0-9]{10}"
                       required
@@ -73,6 +149,8 @@ function ContactForm() {
                       type="email"
                       id="email"
                       name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       placeholder="Enter your email"
                       required
                     />
@@ -84,6 +162,8 @@ function ContactForm() {
                       id="message"
                       name="message"
                       rows="4"
+                      value={formData.message}
+                      onChange={handleChange}
                       required
                     ></textarea>
                   </div>

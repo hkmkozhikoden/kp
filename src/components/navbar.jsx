@@ -42,7 +42,7 @@ function Navbar() {
                 <img src={Logo} className='logo' alt="Logo" />
                 <div className="title mt-3 fs-12">
                 <div className='text-white text-uppercase '>Consulting</div>
-                <div className='text-white text-uppercase lp-1'>Service</div>
+                <div className='text-white text-uppercase lp-1'>Group</div>
                 </div>
                 </div>
               </Link>

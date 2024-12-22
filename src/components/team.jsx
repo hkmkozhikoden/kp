@@ -15,13 +15,13 @@ const teamMembers = [
   },
   {
     id: 2,
-    name: 'Rahoof ',
-    position: 'CTO / Co-founder',
+    name: 'Musthafa ',
+    position: 'Business head',
     image: Team2,
   },
   {
     id: 3,
-    name: 'Mustahfa',
+    name: 'Rishad',
     position: 'Finance manager ',
     image: Team3,
   },

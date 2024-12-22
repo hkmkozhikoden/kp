@@ -1,64 +1,109 @@
 import React from 'react';
 import '../assets/style/css/service-card.css';
-import Img1 from '../assets/images/banner/2.jpg';
-import Img2 from '../assets/images/banner/3.jpg';
-import Img3 from '../assets/images/banner/5.jpg';
-import Img4 from '../assets/images/banner/home3.jpg';
-import Img5 from '../assets/images/banner/blog.jpg';
-import Img6 from '../assets/images/banner/home1.jpg';
-import Serv1 from '../assets/images/icons/loan.png';
-import Serv2 from '../assets/images/icons/gst.png';
-import Serv3 from '../assets/images/icons/software.png';
+import Img1 from '../assets/images/services/tax.webp';
+import Img2 from '../assets/images/services/taxs.webp';
+import Img3 from '../assets/images/services/accounts.webp';
+import Img4 from '../assets/images/services/web-development.webp';
+import Img5 from '../assets/images/services/app-develpment.webp';
+import Img6 from '../assets/images/services/seo.webp';
+import Img7 from '../assets/images/services/tax.webp';
+import Img8 from '../assets/images/services/designing.webp';
+import Img9 from '../assets/images/services/insurance.webp';
+import Img10 from '../assets/images/services/complaints.webp';
+import Serv1 from '../assets/images/icons/taxes.png';
+import Serv2 from '../assets/images/icons/tax.png';
+import Serv3 from '../assets/images/icons/design.png';
+import Serv4 from '../assets/images/icons/promotion.png';
+import Serv5 from '../assets/images/icons/app.png';
+import Serv6 from '../assets/images/icons/accounting.png';
+import Serv7 from '../assets/images/icons/coding.png';
+import Serv8 from '../assets/images/icons/seo.png';
+import Serv9 from '../assets/images/icons/life-insurance.png';
+import Serv10 from '../assets/images/icons/file.png';
+
+
 
 function ServiceCard() {
   const services = [
     {
       id: 1,
       icon: Serv1,
-      title: 'GST Registration',
+      title: 'Direct Taxes',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem enim doloremque nam accusamus voluptatum vitae praesentium fugiat aliquam id aut eligendi possimus ipsa minima ab minus a alias reiciendis.',
-      image: Img1,
+        'All areas of taxation : Personal Tax, Corporate Tax. | Suggesting legal structure of business entities. | Transactional advisory – optimal deal structure | Tax Due Diligence.',
+      image: Img2,
     },
     {
       id: 2,
       icon: Serv2,
-      title: 'Loan Services',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem enim doloremque nam accusamus voluptatum vitae praesentium fugiat aliquam id aut eligendi possimus ipsa minima ab minus a alias reiciendis.',
-      image: Img2,
-    },
-    {
-      id: 3,
-      icon: Serv3,
-      title: 'Software Solutions',
+      title: 'Indirect Taxes',
       description:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem enim doloremque nam accusamus voluptatum vitae praesentium fugiat aliquam id aut eligendi possimus ipsa minima ab minus a alias reiciendis.',
       image: Img3,
     },
     {
+      id: 3,
+      icon: Serv6,
+      title: 'Accounts & Audit',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem enim doloremque nam accusamus voluptatum vitae praesentium fugiat aliquam id aut eligendi possimus ipsa minima ab minus a alias reiciendis.',
+      image: Img1,
+    },
+    {
         id: 4,
-        icon: Serv2,
-        title: 'Loan Services',
+        icon: Serv7,
+        title: 'Website Development',
         description:
           'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem enim doloremque nam accusamus voluptatum vitae praesentium fugiat aliquam id aut eligendi possimus ipsa minima ab minus a alias reiciendis.',
         image: Img4,
       },
       {
         id: 5,
-        icon: Serv3,
-        title: 'Loan Services',
+        icon: Serv5,
+        title: 'Mobile App Development',
         description:
           'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem enim doloremque nam accusamus voluptatum vitae praesentium fugiat aliquam id aut eligendi possimus ipsa minima ab minus a alias reiciendis.',
         image: Img5,
       },
       {
         id: 6,
-        icon: Serv1,
-        title: 'Loan Services',
+        icon: Serv8,
+        title: 'SEO',
         description:
           'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem enim doloremque nam accusamus voluptatum vitae praesentium fugiat aliquam id aut eligendi possimus ipsa minima ab minus a alias reiciendis.',
         image: Img6,
+      },
+      {
+        id: 7,
+        icon: Serv4,
+        title: 'Social Media Marketing',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem enim doloremque nam accusamus voluptatum vitae praesentium fugiat aliquam id aut eligendi possimus ipsa minima ab minus a alias reiciendis.',
+        image: Img7,
+      },
+      {
+        id: 8,
+        icon: Serv3,
+        title: 'Poster & Visiting Card Desin ',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem enim doloremque nam accusamus voluptatum vitae praesentium fugiat aliquam id aut eligendi possimus ipsa minima ab minus a alias reiciendis.',
+        image: Img8,
+      },
+      {
+        id: 9,
+        icon: Serv9,
+        title: 'Employees State Insurance (ESI)',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem enim doloremque nam accusamus voluptatum vitae praesentium fugiat aliquam id aut eligendi possimus ipsa minima ab minus a alias reiciendis.',
+        image: Img9,
+      },
+      {
+        id: 10,
+        icon: Serv10,
+        title: 'Compliances',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem enim doloremque nam accusamus voluptatum vitae praesentium fugiat aliquam id aut eligendi possimus ipsa minima ab minus a alias reiciendis.',
+        image: Img10,
       },
   ];
 

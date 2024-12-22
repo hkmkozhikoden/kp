@@ -21,10 +21,10 @@
 .footer .menu li{
     padding: 10px 0px;
 }
-footer .lp-2{
-    letter-spacing: 6px;
-}
 .footer .menu li{
     list-style: circle;
     color: #fff !important;
+}
+.footer .lp-2{
+    letter-spacing: 10px;
 }

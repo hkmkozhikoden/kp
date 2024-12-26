@@ -155,3 +155,10 @@ h1,h2,h3,h4,h5,h6{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.truncate-4{
+  -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

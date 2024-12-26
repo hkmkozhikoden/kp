@@ -6,7 +6,7 @@ import Img3 from '../assets/images/services/accounts.webp';
 import Img4 from '../assets/images/services/web-development.webp';
 import Img5 from '../assets/images/services/app-develpment.webp';
 import Img6 from '../assets/images/services/seo.webp';
-import Img7 from '../assets/images/services/tax.webp';
+import Img7 from '../assets/images/services/social.webp';
 import Img8 from '../assets/images/services/designing.webp';
 import Img9 from '../assets/images/services/insurance.webp';
 import Img10 from '../assets/images/services/complaints.webp';
@@ -20,6 +20,7 @@ import Serv7 from '../assets/images/icons/coding.png';
 import Serv8 from '../assets/images/icons/seo.png';
 import Serv9 from '../assets/images/icons/life-insurance.png';
 import Serv10 from '../assets/images/icons/file.png';
+
 
 
 
@@ -54,7 +55,7 @@ function ServiceCard() {
         icon: Serv7,
         title: 'Website Development',
         description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem enim doloremque nam accusamus voluptatum vitae praesentium fugiat aliquam id aut eligendi possimus ipsa minima ab minus a alias reiciendis.',
+          'Our expert in-house team uses cutting edge technologies to build custom web and mobile applications that are stunning, robust and scalable',
         image: Img4,
       },
       {
@@ -62,15 +63,14 @@ function ServiceCard() {
         icon: Serv5,
         title: 'Mobile App Development',
         description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem enim doloremque nam accusamus voluptatum vitae praesentium fugiat aliquam id aut eligendi possimus ipsa minima ab minus a alias reiciendis.',
+          'An all-inclusive platform for App development.  Excellent quality, high performance, and efficiency are assured for our Android,  iOS, and web applications.',
         image: Img5,
       },
       {
         id: 6,
         icon: Serv8,
         title: 'SEO',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem enim doloremque nam accusamus voluptatum vitae praesentium fugiat aliquam id aut eligendi possimus ipsa minima ab minus a alias reiciendis.',
+        description:"Boost your online presence with KP's SEO and digital marketing services. Our targeted SEO strategies drive more traffic to your website and enhance visibility.",
         image: Img6,
       },
       {
@@ -78,7 +78,7 @@ function ServiceCard() {
         icon: Serv4,
         title: 'Social Media Marketing',
         description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem enim doloremque nam accusamus voluptatum vitae praesentium fugiat aliquam id aut eligendi possimus ipsa minima ab minus a alias reiciendis.',
+          'Elevate your online presence with strategic social media marketing, fostering engagement and expanding your audience.',
         image: Img7,
       },
       {
@@ -112,7 +112,7 @@ function ServiceCard() {
       <div className="container">
         <div className="row">
           {services.map(service => (
-            <div key={service.id} className="col-md-4 mb-3"  data-aos="fade-up" data-aos-offset="10">
+            <div key={service.id} className="col-lg-4 col-md-6 mb-3"  data-aos="fade-up" data-aos-offset="10">
               <div className="card-sm my-3">
                 <div className='sr-card'>
                   <img src={service.icon} alt={`${service.title}-icon`} />

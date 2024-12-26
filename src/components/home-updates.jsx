@@ -14,29 +14,29 @@ function HomeUpdates() {
   const updates = [
     {
       id: 1,
-      title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, harum!",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas soluta possimus ipsa iusto atque ab, vitae illum quas quaerat ea aliquam autem aut voluptates molestiae voluptatem magnam nemo exercitationem quisquam.",
+      title: "The Role of Responsive Web Design in Increasing Sales",
+      description: "Responsive web design is key for success because it makes your website easy to use on any device, whether it's a phone, tablet, or computer. This improves user experience, keeps visitors on your site longer, and increases the chances of making sales.",
       date: "19 Nov 2024",
       location: "Kerala | IND",
-      author: "KP",
+      author: "Nisam",
       image: Card1,
     },
     {
       id: 2,
-      title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, harum!",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas soluta possimus ipsa iusto atque ab, vitae illum quas quaerat ea aliquam autem aut voluptates molestiae voluptatem magnam nemo exercitationem quisquam.",
+      title: "How Mobile App Development Drives Success for Modern Businesses",
+      description: "Mobile app development is key for businesses because it allows you to connect with customers on the go, offer a better user experience, and make it easier for people to access your products or services. It can also help build customer loyalty and increase sales by providing a more convenient and personalized experience.",
       date: "19 Nov 2024",
-      location: "Delhi | IND",
-      author: "AD",
+      location: "Kerala | IND",
+      author: "Musthafa",
       image: Card3,
     },
     {
       id: 3,
-      title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, harum!",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas soluta possimus ipsa iusto atque ab, vitae illum quas quaerat ea aliquam autem aut voluptates molestiae voluptatem magnam nemo exercitationem quisquam.",
+      title: "Optimize SEO with UX Signals: How Search Intent Can Enhance Your Rankings",
+      description: "Understanding search intent is crucial for improving SEO and boosting rankings. When you align your content with what users are actively searching for, it creates a better user experience (UX), which search engines reward. By analyzing search intent—whether informational, navigational, or transactional—you can tailor your content to meet users' needs, making it more likely they’ll engage with your website. A seamless UX with relevant, intent-driven content can lead to lower bounce rates, higher engagement, and ultimately better rankings on search engine results pages (SERPs).",
       date: "19 Nov 2024",
-      location: "Delhi | IND",
-      author: "AD",
+      location: "Kerala | IND",
+      author: "Nihad",
       image: Card4,
     },
   ];
@@ -44,30 +44,30 @@ function HomeUpdates() {
   const rightCards = [
     {
       id: 1,
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      date: "19 Nov 2024",
+      title: "The Defensive Edge: Transforming Cybersecurity for a Safer Future.",
+      date: "19 Dec 2024",
       location: "Kerala | IND",
-      author: "KP",
+      author: "Rashid",
     },
     {
       id: 2,
-      title: "Another right-side update card example title.",
+      title: "What is BGP and How Does it Enable the Internet to Work?.",
       date: "20 Nov 2024",
-      location: "Delhi | IND",
-      author: "AD",
+      location: "Kerala | IND",
+      author: "Nidhin",
     },
     {
       id: 3,
-      title: "Another right-side update card example title.",
-      date: "20 Nov 2024",
-      location: "Delhi | IND",
+      title: "How IT Services Contribute to Gaining a Competitive Edge.",
+      date: "02 Oct 2024",
+      location: "Kerala | IND",
       author: "AD",
     },
     {
       id: 4,
-      title: "Another right-side update card example title.",
+      title: "Metaverse Is The Future – Experience It With Iluzia Lab",
       date: "20 Nov 2024",
-      location: "Delhi | IND",
+      location: "Kerala | IND",
       author: "AD",
     },
   ];
@@ -106,7 +106,7 @@ function HomeUpdates() {
                   </div>
                   <div className="cont px-3 py-2">
                     <h5 className='mb-3 fs-16'>{update.title}</h5>
-                    <p className='fs-14'>{update.description}</p>
+                    <p className='fs-14 truncate-4'>{update.description}</p>
                     <div className="d-flex justify-content-between mb-2">
                       <div className='fs-13'>{update.date}</div>
                       <div className='fs-13'>{update.location}</div>
